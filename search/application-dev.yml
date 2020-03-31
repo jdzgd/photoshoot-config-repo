@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: photoshoot-search
+#  data:
+#    elasticsearch:
+#      cluster-name: elasticsearch-cluster
+#      cluster-nodes: 127.0.0.1:9300
+
+server:
+  port: 38004
+  servlet:
+    context-path: /search
+
+elasticsearch:
+  host: 127.0.0.1
+  port: 9300
+#  port: 9200
+  name: elasticsearch-cluster
+
+
+logging:
+  config: classpath:log/logback.xml
+
+debug: true
